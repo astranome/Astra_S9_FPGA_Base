@@ -1,0 +1,6 @@
+15:04:39 **** Build of project device_tree_bsp_i2s ****
+make -k all 
+make: *** Нет правила для сборки цели `all'.
+
+15:04:39 Build Finished (took 169ms)
+

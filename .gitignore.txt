@@ -1,0 +1,26 @@
+# Vivado cache и временные файлы
+*.log
+*.jou
+.cache/
+.ip_user_files/
+*.sim*
+webtalk*
+usage_statistics_webtalk*
+*.str
+
+# Скомпилированные файлы
+*.bit
+*.bin
+*.elf
+*.mcs
+*.prm
+
+# ОС файлы
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Большие файлы
+*.zip
+*.rar
+*.7z

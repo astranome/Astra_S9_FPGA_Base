@@ -1,0 +1,32 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Zynq/Ant_HDMI_AudioPWM/Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_processing_system7_0_0/sim/zsys_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zsys_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Zynq/Ant_HDMI_AudioPWM/Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_xlconcat_0_0/sim/zsys_xlconcat_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zsys_xlconcat_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Zynq/Ant_HDMI_AudioPWM/Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_clk_wiz_1_0/zsys_clk_wiz_1_0_mmcm_pll_drp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zsys_clk_wiz_1_0_mmcm_drp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Zynq/Ant_HDMI_AudioPWM/Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_clk_wiz_1_0/zsys_clk_wiz_1_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zsys_clk_wiz_1_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Zynq/Ant_HDMI_AudioPWM/Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_clk_wiz_1_0/zsys_clk_wiz_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zsys_clk_wiz_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Zynq/Ant_HDMI_AudioPWM/Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_v_axi4s_vid_out_0_0/sim/zsys_v_axi4s_vid_out_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zsys_v_axi4s_vid_out_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Zynq/Ant_HDMI_AudioPWM/Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_xbar_0/sim/zsys_xbar_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zsys_xbar_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Zynq/Ant_HDMI_AudioPWM/Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_clk_wiz_0_0/zsys_clk_wiz_0_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zsys_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Zynq/Ant_HDMI_AudioPWM/Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_clk_wiz_0_0/zsys_clk_wiz_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zsys_clk_wiz_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Zynq/Ant_HDMI_AudioPWM/Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_auto_pc_4/sim/zsys_auto_pc_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zsys_auto_pc_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Zynq/Ant_HDMI_AudioPWM/Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_auto_pc_3/sim/zsys_auto_pc_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zsys_auto_pc_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Zynq/Ant_HDMI_AudioPWM/Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_auto_pc_2/sim/zsys_auto_pc_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zsys_auto_pc_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Zynq/Ant_HDMI_AudioPWM/Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_auto_pc_1/sim/zsys_auto_pc_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zsys_auto_pc_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Zynq/Ant_HDMI_AudioPWM/Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_auto_pc_5/sim/zsys_auto_pc_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zsys_auto_pc_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Zynq/Ant_HDMI_AudioPWM/Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_auto_pc_0/sim/zsys_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zsys_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Zynq/Ant_HDMI_AudioPWM/Ant_HDMI_AudioPWM.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

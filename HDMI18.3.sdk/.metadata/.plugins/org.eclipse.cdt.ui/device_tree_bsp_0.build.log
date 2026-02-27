@@ -1,0 +1,6 @@
+16:28:28 **** Build of project device_tree_bsp_0 ****
+make -k all 
+make: *** Нет правила для сборки цели `all'.
+
+16:28:29 Build Finished (took 190ms)
+

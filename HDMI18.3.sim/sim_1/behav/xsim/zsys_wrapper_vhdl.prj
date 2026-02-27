@@ -1,0 +1,57 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Ant_HDMI_AudioPWM.srcs/sources_1/bd/zsys/ipshared/be66/hdl/tmds_encoder.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ipshared/be66/src/serdes_ddr.vhd" \
+"../../../../Ant_HDMI_AudioPWM.srcs/sources_1/bd/zsys/ipshared/be66/hdl/dvi_encoder.vhd" \
+"../../../../Ant_HDMI_AudioPWM.srcs/sources_1/bd/zsys/ipshared/be66/hdl/clock_system.vhd" \
+"../../../../Ant_HDMI_AudioPWM.srcs/sources_1/bd/zsys/ipshared/be66/hdl/Video_IO_2_HDMI_TMDS_v1_0.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_Video_IO_2_HDMI_TMDS_0_0/sim/zsys_Video_IO_2_HDMI_TMDS_0_0.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_axi_vdma_0_1/sim/zsys_axi_vdma_0_1.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ipshared/83c4/src/axis_fb_conv_v1_0.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_axis_fb_conv_0_0/sim/zsys_axis_fb_conv_0_0.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_clk_wiz_1_0/proc_common_v3_00_a/hdl/src/vhdl/zsys_clk_wiz_1_0_conv_funs_pkg.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_clk_wiz_1_0/proc_common_v3_00_a/hdl/src/vhdl/zsys_clk_wiz_1_0_proc_common_pkg.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_clk_wiz_1_0/proc_common_v3_00_a/hdl/src/vhdl/zsys_clk_wiz_1_0_ipif_pkg.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_clk_wiz_1_0/proc_common_v3_00_a/hdl/src/vhdl/zsys_clk_wiz_1_0_family_support.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_clk_wiz_1_0/proc_common_v3_00_a/hdl/src/vhdl/zsys_clk_wiz_1_0_family.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_clk_wiz_1_0/proc_common_v3_00_a/hdl/src/vhdl/zsys_clk_wiz_1_0_soft_reset.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_clk_wiz_1_0/proc_common_v3_00_a/hdl/src/vhdl/zsys_clk_wiz_1_0_pselect_f.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_clk_wiz_1_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/zsys_clk_wiz_1_0_address_decoder.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_clk_wiz_1_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/zsys_clk_wiz_1_0_slave_attachment.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_clk_wiz_1_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/zsys_clk_wiz_1_0_axi_lite_ipif.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_clk_wiz_1_0/zsys_clk_wiz_1_0_clk_wiz_drp.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_clk_wiz_1_0/zsys_clk_wiz_1_0_axi_clk_config.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_v_tc_0_0/sim/zsys_v_tc_0_0.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_rst_processing_system7_0_50M_0/sim/zsys_rst_processing_system7_0_50M_0.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ipshared/596e/hdl/axi_i2s_adi_v1_2.vhd" \
+
+vhdl axi_i2s_adi_v1_00_a  \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ipshared/596e/hdl/i2s_rx.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ipshared/596e/hdl/i2s_tx.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ipshared/596e/hdl/i2s_clkgen.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ipshared/596e/hdl/fifo_synchronizer.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ipshared/596e/hdl/i2s_controller.vhd" \
+
+vhdl adi_common_v1_00_a  \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ipshared/596e/hdl/adi_common/axi_ctrlif.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ipshared/596e/hdl/adi_common/axi_streaming_dma_rx_fifo.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ipshared/596e/hdl/adi_common/pl330_dma_fifo.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ipshared/596e/hdl/adi_common/axi_streaming_dma_tx_fifo.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ipshared/596e/hdl/adi_common/dma_fifo.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ipshared/596e/hdl/axi_i2s_adi_S_AXI.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_axi_i2s_adi_0_0/sim/zsys_axi_i2s_adi_0_0.vhd" \
+"../../../../Ant_HDMI_AudioPWM.srcs/sources_1/bd/zsys/ipshared/44c1/hdl/axis_to_i2s.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_axis_to_i2s_0_0/sim/zsys_axis_to_i2s_0_0.vhd" \
+"../../../../Ant_HDMI_AudioPWM.srcs/sources_1/bd/zsys/ipshared/206f/hdl/i2s_to_pwm.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_i2s_to_pwm_0_0/sim/zsys_i2s_to_pwm_0_0.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0_drp_to_axi_stream.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0_xadc_core_drp.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0_axi_xadc.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/ip/zsys_xadc_wiz_0_0/zsys_xadc_wiz_0_0.vhd" \
+"../../../../Ant_HDMI_AudioPWM.ip_user_files/bd/zsys/sim/zsys.vhd" \
+"../../../../Ant_HDMI_AudioPWM.srcs/sources_1/bd/zsys/hdl/zsys_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

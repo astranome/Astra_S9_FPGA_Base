@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="zsys_wrapper_hw_platform_0" key="programflash.hwplatform"/>
+	<item value="true" key="zsys_wrapper_hw_platform_0-blankCheck"/>
+	<item value="Auto Detect" key="zsys_wrapper_hw_platform_0-device"/>
+	<item value="Local" key="zsys_wrapper_hw_platform_0-target"/>
+	<item value="" key="zsys_wrapper_hw_platform_0-offSet"/>
+	<item value="D:\Zynq\Ant_HDMI_AudioPWM\Ant_HDMI_AudioPWM.sdk\FSBL\Debug\FSBL.elf" key="zsys_wrapper_hw_platform_0-fsblFile"/>
+	<item value="D:\Zynq\Ant_HDMI_AudioPWM\Ant_HDMI_AudioPWM.sdk\FSBL\bootimage\BOOT.bin" key="zsys_wrapper_hw_platform_0-imgFile"/>
+	<item value="nand_8" key="zsys_wrapper_hw_platform_0-flashType"/>
+	<item value="true" key="zsys_wrapper_hw_platform_0-verifyFlash"/>
+</section>
