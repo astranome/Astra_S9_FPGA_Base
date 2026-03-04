@@ -1,0 +1,27 @@
+# Vivado cache и временные файлы
+*.log
+*.jou
+.cache/
+.ip_user_files/
+*.sim*
+webtalk*
+usage_statistics_webtalk*
+*.str
+*.bak
+.backup/
+
+# Xilinx временные папки
+.Xil/
+*.ltx
+*.pb
+*.rpt
+
+# ОС файлы
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Архивы
+*.zip
+*.rar
+*.7z
