@@ -5,23 +5,23 @@
 
 ## Реализованные интерфейсы
 - ✅ HDMI / VGA
-- ✅ I2S Audio  
+- ✅ I2S Audio IN/OUT
 - ✅ I2C
 - ✅ SPI
 - ✅ UART
 - ✅ GPIO
 - ✅ Ethernet
-- ✅ Web Server (Flarum forum)
+- ✅ Audio Stereo Out (PWM based)
 
 ## Структура проекта
-- `fpga/` - Verilog/VHDL исходники для Xilinx Vivado
-- `arm/` - C/C++ код для ARM Cortex-A9
+- `HDMI18.3.srcs/` - Verilog/VHDL исходники для Xilinx Vivado
+- `images/` - Pics
 - `docs/` - Документация и распиновка
 - `examples/` - Примеры использования интерфейсов
 
 ## Инструменты разработки
-- Xilinx Vivado 2023.2
-- Vitis 2023.2
+- Xilinx Vivado 2018.3
+- SDK 2018.3
 - Target: Xilinx Zynq-7010 (XC7Z010)
 
 ## Применение
@@ -32,10 +32,10 @@
 
 ## Ресурсы
 - Сайт проекта: https://astra.org.ru
-- Форум: https://astra.org.ru/forum
+- Форум: https://astra.org.ru
 
 ## Лицензия
 MIT License
 
 ## Автор
-Проект ASTRA S9
+ASTRALAB 
