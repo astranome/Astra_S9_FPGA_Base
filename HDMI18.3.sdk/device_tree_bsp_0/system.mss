@@ -5,7 +5,7 @@
 BEGIN OS
  PARAMETER OS_NAME = device_tree
  PARAMETER PROC_INSTANCE = ps7_cortexa9_0
- PARAMETER console_device = ps7_uart_0
+ PARAMETER console_device = ps7_uart_1
  PARAMETER main_memory = ps7_ddr_0
 END
 
@@ -17,18 +17,141 @@ END
 
 
 BEGIN DRIVER
+ PARAMETER DRIVER_NAME = audio_formatter
+ PARAMETER HW_INSTANCE = audio_formatter_0
+ PARAMETER clock-names =  s_axi_lite_aclk m_axis_mm2s_aclk aud_mclk s_axis_s2mm_aclk
+ PARAMETER clocks = clkc 15>, <&clkc 16>, <&misc_clk_0>, <&clkc 16
+ PARAMETER compatible = xlnx,audio-formatter-1.0 xlnx,audio-formatter-1.0
+ PARAMETER interrupt-names =  irq_mm2s irq_s2mm
+ PARAMETER interrupt-parent = intc
+ PARAMETER interrupts = 0 32 4 0 33 4
+ PARAMETER reg = 0x43c20000 0x10000
+ PARAMETER xlnx,include-mm2s = 1
+ PARAMETER xlnx,include-s2mm = 1
+ PARAMETER xlnx,max-num-channels-mm2s = 2
+ PARAMETER xlnx,max-num-channels-s2mm = 2
+ PARAMETER xlnx,mm2s-addr-width = 64
+ PARAMETER xlnx,mm2s-async-clock = 1
+ PARAMETER xlnx,mm2s-dataformat = 3
+ PARAMETER xlnx,packing-mode-mm2s = 0
+ PARAMETER xlnx,packing-mode-s2mm = 0
+ PARAMETER xlnx,s2mm-addr-width = 64
+ PARAMETER xlnx,s2mm-async-clock = 1
+ PARAMETER xlnx,s2mm-dataformat = 1
+END
+
+BEGIN DRIVER
  PARAMETER DRIVER_NAME = generic
- PARAMETER HW_INSTANCE = audio_axi_i2s_adi_0
+ PARAMETER HW_INSTANCE = axi_dynclk_0
+ PARAMETER clock-names =  REF_CLK_I s00_axi_aclk
+ PARAMETER clocks = clkc 15>, <&clkc 15
+ PARAMETER compatible = xlnx,axi-dynclk-1.0
+ PARAMETER reg = 0x43c00000 0x10000
+ PARAMETER xlnx,s00-axi-addr-width = 5
+ PARAMETER xlnx,s00-axi-data-width = 32
 END
 
 BEGIN DRIVER
  PARAMETER DRIVER_NAME = gpio
- PARAMETER HW_INSTANCE = axi_gpio_0
+ PARAMETER HW_INSTANCE = axi_gpio_16
+ PARAMETER clock-names =  s_axi_aclk
+ PARAMETER clocks = clkc 15
+ PARAMETER compatible = xlnx,axi-gpio-2.0 xlnx,xps-gpio-1.00.a
+ PARAMETER interrupt-names =  ip2intc_irpt
+ PARAMETER interrupt-parent = intc
+ PARAMETER interrupts = 0 31 4
+ PARAMETER reg = 0x41210000 0x10000
+ PARAMETER xlnx,all-inputs = 0
+ PARAMETER xlnx,all-inputs-2 = 0
+ PARAMETER xlnx,all-outputs = 0
+ PARAMETER xlnx,all-outputs-2 = 0
+ PARAMETER xlnx,dout-default = 0x00000000
+ PARAMETER xlnx,dout-default-2 = 0x00000000
+ PARAMETER xlnx,gpio-width = 16
+ PARAMETER xlnx,gpio2-width = 32
+ PARAMETER xlnx,interrupt-present = 1
+ PARAMETER xlnx,is-dual = 0
+ PARAMETER xlnx,tri-default = 0xFFFFFFFF
+ PARAMETER xlnx,tri-default-2 = 0xFFFFFFFF
 END
 
 BEGIN DRIVER
  PARAMETER DRIVER_NAME = gpio
  PARAMETER HW_INSTANCE = axi_gpio_LED
+ PARAMETER clock-names =  s_axi_aclk
+ PARAMETER clocks = clkc 15
+ PARAMETER compatible = xlnx,axi-gpio-2.0 xlnx,xps-gpio-1.00.a
+ PARAMETER reg = 0x41220000 0x10000
+ PARAMETER xlnx,all-inputs = 0
+ PARAMETER xlnx,all-inputs-2 = 0
+ PARAMETER xlnx,all-outputs = 1
+ PARAMETER xlnx,all-outputs-2 = 0
+ PARAMETER xlnx,dout-default = 0x00000000
+ PARAMETER xlnx,dout-default-2 = 0x00000000
+ PARAMETER xlnx,gpio-width = 4
+ PARAMETER xlnx,gpio2-width = 32
+ PARAMETER xlnx,interrupt-present = 0
+ PARAMETER xlnx,is-dual = 0
+ PARAMETER xlnx,tri-default = 0xFFFFFFFF
+ PARAMETER xlnx,tri-default-2 = 0xFFFFFFFF
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = uartlite
+ PARAMETER HW_INSTANCE = axi_uartlite_0
+ PARAMETER clock-names =  s_axi_aclk
+ PARAMETER clocks = misc_clk_1
+ PARAMETER compatible = xlnx,axi-uartlite-2.0 xlnx,xps-uartlite-1.00.a
+ PARAMETER current-speed = 38400
+ PARAMETER interrupt-names =  interrupt
+ PARAMETER interrupt-parent = intc
+ PARAMETER interrupts = 0 36 1
+ PARAMETER port-number = 1
+ PARAMETER reg = 0x42c00000 0x10000
+ PARAMETER xlnx,baudrate = 38400
+ PARAMETER xlnx,data-bits = 8
+ PARAMETER xlnx,odd-parity = 0
+ PARAMETER xlnx,s-axi-aclk-freq-hz-d = 100
+ PARAMETER xlnx,use-parity = 0
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = axi_vdma
+ PARAMETER HW_INSTANCE = axi_vdma_0
+ PARAMETER clock-names =  s_axi_lite_aclk m_axi_mm2s_aclk m_axis_mm2s_aclk
+ PARAMETER clocks = clkc 15>, <&clkc 16>, <&clkc 16
+ PARAMETER compatible = xlnx,axi-vdma-6.3 xlnx,axi-vdma-1.00.a
+ PARAMETER interrupt-names =  mm2s_introut
+ PARAMETER interrupt-parent = intc
+ PARAMETER interrupts = 0 29 4
+ PARAMETER reg = 0x43000000 0x10000
+ PARAMETER xlnx,addrwidth = 32
+ PARAMETER xlnx,flush-fsync = 1
+ PARAMETER xlnx,num-fstores = 1
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = i2s_receiver
+ PARAMETER HW_INSTANCE = i2s_receiver_0
+ PARAMETER clock-names =  s_axi_ctrl_aclk aud_mclk m_axis_aud_aclk
+ PARAMETER clocks = clkc 15>, <&misc_clk_0>, <&clkc 16
+ PARAMETER compatible = xlnx,i2s-receiver-1.0 xlnx,i2s-receiver-1.0
+ PARAMETER interrupt-names =  irq
+ PARAMETER interrupt-parent = intc
+ PARAMETER interrupts = 0 35 4
+ PARAMETER reg = 0x43c30000 0x10000
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = i2s_transmitter
+ PARAMETER HW_INSTANCE = i2s_transmitter_0
+ PARAMETER clock-names =  s_axi_ctrl_aclk aud_mclk s_axis_aud_aclk
+ PARAMETER clocks = clkc 15>, <&misc_clk_0>, <&clkc 16
+ PARAMETER compatible = xlnx,i2s-transmitter-1.0 xlnx,i2s-transmitter-1.0
+ PARAMETER interrupt-names =  irq
+ PARAMETER interrupt-parent = intc
+ PARAMETER interrupts = 0 34 4
+ PARAMETER reg = 0x43c40000 0x10000
 END
 
 BEGIN DRIVER
@@ -59,6 +182,7 @@ END
 BEGIN DRIVER
  PARAMETER DRIVER_NAME = ddrps
  PARAMETER HW_INSTANCE = ps7_ddr_0
+ PARAMETER reg = 0x0 0x20000000
 END
 
 BEGIN DRIVER
@@ -72,7 +196,7 @@ BEGIN DRIVER
 END
 
 BEGIN DRIVER
- PARAMETER DRIVER_NAME = dmaps
+ PARAMETER DRIVER_NAME = none
  PARAMETER HW_INSTANCE = ps7_dma_ns
 END
 
@@ -84,6 +208,8 @@ END
 BEGIN DRIVER
  PARAMETER DRIVER_NAME = emacps
  PARAMETER HW_INSTANCE = ps7_ethernet_0
+ PARAMETER phy-mode = rgmii-id
+ PARAMETER xlnx,ptp-enet-clock = 111111115
 END
 
 BEGIN DRIVER
@@ -94,16 +220,14 @@ END
 BEGIN DRIVER
  PARAMETER DRIVER_NAME = gpiops
  PARAMETER HW_INSTANCE = ps7_gpio_0
+ PARAMETER emio-gpio-width = 64
+ PARAMETER gpio-mask-high = 0
+ PARAMETER gpio-mask-low = 22016
 END
 
 BEGIN DRIVER
  PARAMETER DRIVER_NAME = generic
  PARAMETER HW_INSTANCE = ps7_gpv_0
-END
-
-BEGIN DRIVER
- PARAMETER DRIVER_NAME = iicps
- PARAMETER HW_INSTANCE = ps7_i2c_0
 END
 
 BEGIN DRIVER
@@ -129,6 +253,14 @@ END
 BEGIN DRIVER
  PARAMETER DRIVER_NAME = nandps
  PARAMETER HW_INSTANCE = ps7_nand_0
+ PARAMETER arm,nand-cycle-t0 = 5
+ PARAMETER arm,nand-cycle-t1 = 4
+ PARAMETER arm,nand-cycle-t2 = 0
+ PARAMETER arm,nand-cycle-t3 = 2
+ PARAMETER arm,nand-cycle-t4 = 1
+ PARAMETER arm,nand-cycle-t5 = 1
+ PARAMETER arm,nand-cycle-t6 = 2
+ PARAMETER nand-bus-width = 8
 END
 
 BEGIN DRIVER
@@ -152,7 +284,7 @@ BEGIN DRIVER
 END
 
 BEGIN DRIVER
- PARAMETER DRIVER_NAME = ramps
+ PARAMETER DRIVER_NAME = none
  PARAMETER HW_INSTANCE = ps7_ram_1
 END
 
@@ -179,6 +311,9 @@ END
 BEGIN DRIVER
  PARAMETER DRIVER_NAME = generic
  PARAMETER HW_INSTANCE = ps7_sd_0
+ PARAMETER xlnx,has-cd = 1
+ PARAMETER xlnx,has-power = 0
+ PARAMETER xlnx,has-wp = 0
 END
 
 BEGIN DRIVER
@@ -194,16 +329,7 @@ END
 BEGIN DRIVER
  PARAMETER DRIVER_NAME = spips
  PARAMETER HW_INSTANCE = ps7_spi_0
-END
-
-BEGIN DRIVER
- PARAMETER DRIVER_NAME = spips
- PARAMETER HW_INSTANCE = ps7_spi_1
-END
-
-BEGIN DRIVER
- PARAMETER DRIVER_NAME = uartps
- PARAMETER HW_INSTANCE = ps7_uart_0
+ PARAMETER num-cs = 3
 END
 
 BEGIN DRIVER
@@ -217,18 +343,15 @@ BEGIN DRIVER
 END
 
 BEGIN DRIVER
- PARAMETER DRIVER_NAME = axi_vdma
- PARAMETER HW_INSTANCE = video_out_axi_vdma_0
-END
-
-BEGIN DRIVER
- PARAMETER DRIVER_NAME = axi_clk_wiz
- PARAMETER HW_INSTANCE = video_out_clk_wiz_1
-END
-
-BEGIN DRIVER
- PARAMETER DRIVER_NAME = generic
- PARAMETER HW_INSTANCE = video_out_v_tc_0
+ PARAMETER DRIVER_NAME = vtc
+ PARAMETER HW_INSTANCE = v_tc_0
+ PARAMETER clock-names =  clk s_axi_aclk
+ PARAMETER clocks = misc_clk_2>, <&clkc 15
+ PARAMETER compatible = xlnx,v-tc-6.1 xlnx,v-tc-6.1
+ PARAMETER interrupt-names =  irq
+ PARAMETER interrupt-parent = intc
+ PARAMETER interrupts = 0 30 4
+ PARAMETER reg = 0x43c10000 0x10000
 END
 
 

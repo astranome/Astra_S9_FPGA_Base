@@ -1,4 +1,4 @@
-activeuserprofiles=AR-PORT;Team
+activeuserprofiles=AVIC;Team
 eclipse.preferences.version=1
-org.eclipse.rse.systemtype.local.systemType.defaultUserId=ysupo
-useridperkey=AR-PORT.Local\=ysupo;
+org.eclipse.rse.systemtype.local.systemType.defaultUserId=Administrator
+useridperkey=AVIC.Local\=Administrator;

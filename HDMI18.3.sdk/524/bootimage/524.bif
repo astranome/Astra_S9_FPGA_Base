@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]E:\141\HDMI18.3\HDMI18.3.sdk\524\Debug\524.elf
+	E:\141\HDMI18.3\HDMI18.3.sdk\system_wrapper_hw_platform_3\system_wrapper.bit
+	E:\u-bootkroff.elf
+}

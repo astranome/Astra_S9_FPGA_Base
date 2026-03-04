@@ -1,66 +1,63 @@
-src/nor.o src/nor.o: ../src/nor.c ../src/fsbl.h \
- ../../FSBL_bsp/ps7_cortexa9_0/include/xil_io.h \
- ../../FSBL_bsp/ps7_cortexa9_0/include/xil_types.h \
- ../../FSBL_bsp/ps7_cortexa9_0/include/xil_printf.h \
- ../../FSBL_bsp/ps7_cortexa9_0/include/xparameters.h \
- ../../FSBL_bsp/ps7_cortexa9_0/include/xparameters_ps.h \
- ../../FSBL_bsp/ps7_cortexa9_0/include/bspconfig.h \
- ../../FSBL_bsp/ps7_cortexa9_0/include/xpseudo_asm.h \
- ../../FSBL_bsp/ps7_cortexa9_0/include/xreg_cortexa9.h \
- ../../FSBL_bsp/ps7_cortexa9_0/include/xpseudo_asm_gcc.h \
- ../../FSBL_bsp/ps7_cortexa9_0/include/xparameters.h \
- ../../FSBL_bsp/ps7_cortexa9_0/include/xpseudo_asm.h \
- ../../FSBL_bsp/ps7_cortexa9_0/include/xil_printf.h ../src/pcap.h \
- ../../FSBL_bsp/ps7_cortexa9_0/include/xdevcfg.h \
- ../../FSBL_bsp/ps7_cortexa9_0/include/xdevcfg_hw.h \
- ../../FSBL_bsp/ps7_cortexa9_0/include/xil_io.h \
- ../../FSBL_bsp/ps7_cortexa9_0/include/xstatus.h \
- ../../FSBL_bsp/ps7_cortexa9_0/include/xil_assert.h ../src/fsbl_debug.h \
- E:\Ant_HDMI_AudioPWM\Ant_HDMI_AudioPWM.sdk\zsys_wrapper_hw_platform_0/ps7_init.h \
- ../src/nor.h ../../FSBL_bsp/ps7_cortexa9_0/include/xstatus.h
+src/nor.o src/nor.d: ../src/nor.c ../src/fsbl.h \
+ ../../fsbl_bsp/ps7_cortexa9_0/include/xil_io.h \
+ ../../fsbl_bsp/ps7_cortexa9_0/include/xil_types.h \
+ ../../fsbl_bsp/ps7_cortexa9_0/include/xpseudo_asm.h \
+ ../../fsbl_bsp/ps7_cortexa9_0/include/xreg_cortexa9.h \
+ ../../fsbl_bsp/ps7_cortexa9_0/include/xpseudo_asm_gcc.h \
+ ../../fsbl_bsp/ps7_cortexa9_0/include/xil_printf.h \
+ ../../fsbl_bsp/ps7_cortexa9_0/include/xparameters.h \
+ ../../fsbl_bsp/ps7_cortexa9_0/include/xparameters_ps.h \
+ ../../fsbl_bsp/ps7_cortexa9_0/include/xparameters.h \
+ ../../fsbl_bsp/ps7_cortexa9_0/include/xpseudo_asm.h \
+ ../../fsbl_bsp/ps7_cortexa9_0/include/xil_printf.h ../src/pcap.h \
+ ../../fsbl_bsp/ps7_cortexa9_0/include/xdevcfg.h \
+ ../../fsbl_bsp/ps7_cortexa9_0/include/xdevcfg_hw.h \
+ ../../fsbl_bsp/ps7_cortexa9_0/include/xil_io.h \
+ ../../fsbl_bsp/ps7_cortexa9_0/include/xstatus.h \
+ ../../fsbl_bsp/ps7_cortexa9_0/include/xil_assert.h ../src/fsbl_debug.h \
+ Y:\project\AX\AX7010\AX7010_CD\02_source\vivado_project\10_linux_hw\linux_hw.sdk\system_wrapper_hw_platform_1/ps7_init.h \
+ ../src/nor.h ../../fsbl_bsp/ps7_cortexa9_0/include/xstatus.h
 
 ../src/fsbl.h:
 
-../../FSBL_bsp/ps7_cortexa9_0/include/xil_io.h:
+../../fsbl_bsp/ps7_cortexa9_0/include/xil_io.h:
 
-../../FSBL_bsp/ps7_cortexa9_0/include/xil_types.h:
+../../fsbl_bsp/ps7_cortexa9_0/include/xil_types.h:
 
-../../FSBL_bsp/ps7_cortexa9_0/include/xil_printf.h:
+../../fsbl_bsp/ps7_cortexa9_0/include/xpseudo_asm.h:
 
-../../FSBL_bsp/ps7_cortexa9_0/include/xparameters.h:
+../../fsbl_bsp/ps7_cortexa9_0/include/xreg_cortexa9.h:
 
-../../FSBL_bsp/ps7_cortexa9_0/include/xparameters_ps.h:
+../../fsbl_bsp/ps7_cortexa9_0/include/xpseudo_asm_gcc.h:
 
-../../FSBL_bsp/ps7_cortexa9_0/include/bspconfig.h:
+../../fsbl_bsp/ps7_cortexa9_0/include/xil_printf.h:
 
-../../FSBL_bsp/ps7_cortexa9_0/include/xpseudo_asm.h:
+../../fsbl_bsp/ps7_cortexa9_0/include/xparameters.h:
 
-../../FSBL_bsp/ps7_cortexa9_0/include/xreg_cortexa9.h:
+../../fsbl_bsp/ps7_cortexa9_0/include/xparameters_ps.h:
 
-../../FSBL_bsp/ps7_cortexa9_0/include/xpseudo_asm_gcc.h:
+../../fsbl_bsp/ps7_cortexa9_0/include/xparameters.h:
 
-../../FSBL_bsp/ps7_cortexa9_0/include/xparameters.h:
+../../fsbl_bsp/ps7_cortexa9_0/include/xpseudo_asm.h:
 
-../../FSBL_bsp/ps7_cortexa9_0/include/xpseudo_asm.h:
-
-../../FSBL_bsp/ps7_cortexa9_0/include/xil_printf.h:
+../../fsbl_bsp/ps7_cortexa9_0/include/xil_printf.h:
 
 ../src/pcap.h:
 
-../../FSBL_bsp/ps7_cortexa9_0/include/xdevcfg.h:
+../../fsbl_bsp/ps7_cortexa9_0/include/xdevcfg.h:
 
-../../FSBL_bsp/ps7_cortexa9_0/include/xdevcfg_hw.h:
+../../fsbl_bsp/ps7_cortexa9_0/include/xdevcfg_hw.h:
 
-../../FSBL_bsp/ps7_cortexa9_0/include/xil_io.h:
+../../fsbl_bsp/ps7_cortexa9_0/include/xil_io.h:
 
-../../FSBL_bsp/ps7_cortexa9_0/include/xstatus.h:
+../../fsbl_bsp/ps7_cortexa9_0/include/xstatus.h:
 
-../../FSBL_bsp/ps7_cortexa9_0/include/xil_assert.h:
+../../fsbl_bsp/ps7_cortexa9_0/include/xil_assert.h:
 
 ../src/fsbl_debug.h:
 
-E:\Ant_HDMI_AudioPWM\Ant_HDMI_AudioPWM.sdk\zsys_wrapper_hw_platform_0/ps7_init.h:
+Y:\project\AX\AX7010\AX7010_CD\02_source\vivado_project\10_linux_hw\linux_hw.sdk\system_wrapper_hw_platform_1/ps7_init.h:
 
 ../src/nor.h:
 
-../../FSBL_bsp/ps7_cortexa9_0/include/xstatus.h:
+../../fsbl_bsp/ps7_cortexa9_0/include/xstatus.h:

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>FSBL_bsp</name>
-	<comment>Created by SDK v2018.2</comment>
+	<name>fsbl_bsp</name>
+	<comment>Created by SDK v2015.4</comment>
 	<projects>
 	</projects>
 	<buildSpec>

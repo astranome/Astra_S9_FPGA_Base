@@ -25,41 +25,34 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 ELFSIZE += \
-FSBL.elf.size \
+fsbl.elf.size \
 
 
 # All Target
-all: pre-build main-build
-
-# Main-build Target
-main-build: FSBL.elf secondary-outputs
+all: fsbl.elf secondary-outputs
 
 # Tool invocations
-FSBL.elf: $(OBJS) ../src/lscript.ld $(USER_OBJS)
+fsbl.elf: $(OBJS) ../src/lscript.ld $(USER_OBJS)
 	@echo 'Building target: $@'
-	@echo 'Invoking: ARM v7 gcc linker'
-	arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FSBL_bsp/ps7_cortexa9_0/lib -o "FSBL.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	@echo 'Invoking: ARM gcc linker'
+	arm-xilinx-eabi-gcc -L"E:\141\HDMI18.3\HDMI18.3.sdk\fsbl\src" -Wl,-T -Wl,../src/lscript.ld -L../../fsbl_bsp/ps7_cortexa9_0/lib -o "fsbl.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-FSBL.elf.size: FSBL.elf
-	@echo 'Invoking: ARM v7 Print Size'
-	arm-none-eabi-size FSBL.elf  |tee "FSBL.elf.size"
+fsbl.elf.size: fsbl.elf
+	@echo 'Invoking: ARM Print Size'
+	arm-xilinx-eabi-size fsbl.elf  |tee "fsbl.elf.size"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(OBJS)$(S_UPPER_DEPS)$(C_DEPS)$(ELFSIZE) FSBL.elf
-	-@echo ' '
-
-pre-build:
-	-a9-linaro-pre-build-step
+	-$(RM) $(EXECUTABLES)$(OBJS)$(S_UPPER_DEPS)$(C_DEPS)$(ELFSIZE) fsbl.elf
 	-@echo ' '
 
 secondary-outputs: $(ELFSIZE)
 
 .PHONY: all clean dependents
-.SECONDARY: main-build pre-build
+.SECONDARY:
 
 -include ../makefile.targets
